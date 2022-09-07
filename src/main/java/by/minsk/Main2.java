@@ -22,9 +22,11 @@ public class Main2 {
                     countRepeat++;
                 }
             }
+
             if (countRepeat == 1) {
                 count++;
             }
+
             if (count == 2) {
                 return i;
             }
@@ -33,8 +35,8 @@ public class Main2 {
     }
 
     private static void print(int[] array){
-        for(int i = 0; i < array.length; i++){
-            System.out.print(array[i] + "\t");
+        for (int i : array) {
+            System.out.print(i + "\t");
         }
     }
 }
